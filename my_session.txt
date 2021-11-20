@@ -1,14 +1,36 @@
-
-R1>terminal width 511
-R1>terminal length 0
-R1>
-R1>
-R1>
-R1>enable
-Password: 
+R1#terminal width 511
+R1#terminal length 0
 R1#
-R1#delete unix:/R1-Config-3
-Delete filename [R1-Config-3]? 
-Delete unix:/R1-Config-3? [confirm]
+R1#
+R1#
+R1#
+R1#
+R1#dir unix:
+Directory of unix:/
+
+1439014  -rw-           0  Nov 20 2021 20:36:54 +02:00  wrapper.txt
+1439015  -rw-         812  Nov 20 2021 20:36:54 +02:00  NETMAP
+1439013  -rw-           0  Nov 20 2021 20:36:54 +02:00  .prepared
+1439020  -rw-     1048576  Nov 20 2021 21:32:30 +02:00  nvram_00032
+1439021  -rw-        1308  Nov 20 2021 14:53:23 +02:00  R1-Config-2
+1439023  -rw-          23  Nov 20 2021 21:32:52 +02:00  README.md
+1439022  -rw-        1308  Nov 20 2021 14:53:25 +02:00  R1-Config-1
+
+2147479552 bytes total (2147479552 bytes free)
+R1#
+R1#
+R1#dir unix:/README.md
+Directory of unix:/README.md
+
+1439023  -rw-          23  Nov 20 2021 21:32:52 +02:00  README.md
+
+2147479552 bytes total (2147479552 bytes free)
+R1#
+R1#
+R1#verify /md5 unix:/README.md
+.MD5 of unix:/README.md Done!
+verify /md5 (unix:/README.md) = 5e6c8a3ad2b2e2ce508ab76d1529944b
+
 
 R1#
+R1#exit
