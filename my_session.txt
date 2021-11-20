@@ -3,8 +3,12 @@ R1>terminal width 511
 R1>terminal length 0
 R1>
 R1>
+R1>
 R1>enable
 Password: 
 R1#
-R1#
+R1#delete unix:/R1-Config-3
+Delete filename [R1-Config-3]? 
+Delete unix:/R1-Config-3? [confirm]
+
 R1#
