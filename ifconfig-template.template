@@ -1,0 +1,8 @@
+Value INTERFACE (\S+:)
+Value PREFIX (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})
+
+Start
+  ^${INTERFACE}\s+
+  ^\s+inet\s+${PREFIX}\s+ -> Record
+
+EOF

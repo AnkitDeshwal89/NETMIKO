@@ -1,0 +1,7 @@
+router bgp {{local_as}}
+bgp router-id {{router_id}}
+{%- for ip in peer1 %}
+      {%- if (ip.split('.')[3]|int)%2 == 0 %}
+        neighbor {{ip}} remote-as {{remote_as}}
+      {%- endif %}
+{%- endfor %}
