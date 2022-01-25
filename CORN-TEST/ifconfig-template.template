@@ -1,0 +1,8 @@
+Value INTERFACE (\S+:)
+Value TXP (\d+)
+
+Start
+  ^${INTERFACE}\s+
+  ^\s+TX packets\s+${TXP}\s+ -> Record
+
+EOF
